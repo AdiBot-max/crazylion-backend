@@ -76,7 +76,7 @@ app.post("/signup", (req, res) => {
   // return profile URL
   res.json({
     success: true,
-    profile: `https://${req.get("host")}/u/${username}`
+    profile: `https://${req.get("host")}/u/@${username}`
   });
 });
 
